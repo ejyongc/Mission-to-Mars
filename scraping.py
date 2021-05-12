@@ -124,7 +124,7 @@ def mars_hemispheres():
     # Go through the links and get the url and title
     for index in range(len(hemispheres_box)):
         # create dictionary to store the hemispheres
-        hemispheres = {}
+        #hemispheres = {}
 
         # Find the hemisphere link and click on it
         image = browser.find_by_css("a.product-item img")[index]
@@ -147,7 +147,7 @@ def mars_hemispheres():
         hemisphere_image_urls.append(entries)
         
         # Add the current dictionary to the hemisohere_image_urls list
-        hemisphere_image_urls.append(hemispheres)
+        #hemisphere_image_urls.append(hemispheres)
 
         # Print(image_title and image_url)
         # print(image_title)
@@ -156,7 +156,8 @@ def mars_hemispheres():
         
         # Return to the homepage
         browser.back()
-        
+    
+    print(hemisphere_image_urls)    
     # return the dictionary with each image url and title. 
     return hemisphere_image_urls
 
