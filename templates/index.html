@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+    <!-- Add CSS -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='style.css')}}"
+    />
   </head>
   <body>
     <div class="container">
@@ -16,7 +21,7 @@
       <div class="jumbotron text-center">
         <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" style="color: red;" ><strong>Scrape New Data</strong></a></p>
+        <p><a class="btn btn-primary btn-lg red" href="/scrape" role="button"><strong>Scrape New Data</strong></a></p>
       </div>
 
       <!-- Add section for Mars News -->
